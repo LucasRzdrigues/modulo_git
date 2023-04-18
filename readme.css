@@ -1,0 +1,19 @@
+h1 { /* Adicionado CSS usando seletor por tag*/
+    color: green
+}
+
+h2 { /* Adicionado CSS usando seletor por tag*/
+    color: green
+}
+
+#economia h2 { /* Adicionado CSS usando seletor por id*/
+    color: gold
+}
+
+.datadecriacao { /* Adicionado CSS usando seletor por classe*/
+    color: #ccc
+}
+
+* { /* Adicionado CSS usando seletor especial que seleciona todo texto da página e o altera, menos aqueles já alterados antes */
+    color: red;
+}

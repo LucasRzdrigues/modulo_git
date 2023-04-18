@@ -1,0 +1,139 @@
+* { /* Adicionado CSS usando seletor especial que seleciona toda a página, criando um "reset" que irá tirar a margin ou padding automático do navegador */
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body > header { /* Usar apenas header iria dar conflito com outros header da página, com body > definimos que queremos o header que seja filho direto do body */
+    background-color: #4c4f56;
+    padding: 16px 0; /* Espaçamento */
+    color: aliceblue;
+}
+
+header h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header li {
+    display: inline; /* Display configura como o elemento será exibido */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left: 16px;
+}
+
+header li a { 
+    color: aliceblue;
+    text-decoration: none;
+}
+
+header li a:hover {
+    text-decoration: underline;
+}
+
+.container { /* div criada */
+    width: 1366px; /* tamanho padrão de um monitor de note */
+    margin: 0 auto;
+}
+
+.articles { /* div criada para definir a posição das notícias na página */
+    display: flex; /* organiza as notícias em linha */
+    flex-wrap: wrap; /* quando acabar a linha, organize em outra linha */
+    justify-content: space-between; /* divir as notícias igualmente na página */
+}
+
+.articles article img { /* div criada para definir o tamanho das imagens na página */
+    /* height: 180px; */
+    width: 100%;
+}
+
+.articles article { /* div criada para definir o tamanho das notícias na página */
+    width: 30%; /* foi escolhido 30% pois são 3 notícias/100% que seria o total = 33%, porém 30% para ter folga nas margens */
+}
+
+section {
+    padding: 16px 0;
+}
+
+section h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section h2, /* título das seções, como "Esporte" */
+.articles article { /* notícias */
+    margin-bottom: 16px;
+}
+
+.articles article h3 { /* título das notícias */
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.articles article a { /* link de ler mais */
+    background-color: #0099ff;
+    color: aliceblue;
+    padding: 8px;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.articles article a:hover {
+    text-decoration: underline;
+}
+
+.articles article p,
+.articles article a { /* resumo da notícia */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article header time {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.articles article h3 {
+    font-size: 24px;
+}
+
+section h2 {
+    font-size: 32px;
+}
+
+#esportes {
+    background-color:rgba(0, 153, 51, 0.3)
+}
+
+#esportes .articles article a {
+    background-color: rgba(0, 153, 51, 0.8);
+}
+
+#economia {
+    background-color: rgba(204, 102, 0, 0.3);
+}
+
+#economia .articles article a {
+    background-color: rgba(204, 102, 0, 0.8)
+}
+
+#tecnologia {
+    background-color: rgba(0, 0, 255, 0.3);
+}
+
+#tecnologia .articles article a {
+    background-color: rgba(0, 0, 255, 0.8);
+}
+
+#entretenimento {
+    background-color: rgba(255, 0, 0, 0.3);
+}
+
+#entretenimento .articles article a {
+    background-color: rgba(255, 0, 0, 0.8);
+}
